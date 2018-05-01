@@ -8,11 +8,11 @@ def index():
 
 @app.route('/user')
 def user():
-    return render_template('template.html')
+    return '<h1> The page for the users </h1>'
 
 @app.route('/user/<string:username>')
 def username(username):
-    return "<h1>hello %s</h1>" % username
+    return render_template('template.html')
 
 
 if __name__ == '__main__':
