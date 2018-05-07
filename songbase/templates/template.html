@@ -3,14 +3,14 @@
 
 {% block content %}
 
-    {# This is a comment #}
-    {% if name == 'harry'%}
-      <h1>Hello Professor</h1>
-    {% else %}
-    <h1>Hello, {{name}}</h1>
-    {% endif %}
+  {# This is a comment #}
+  {% if username == 'harry' %}
+    <h1>Hello Professor!</h1>
+  {% else %}
+    <h1>Hello, {{username}}</h1>
+  {% endif %}
 
-    <h2>The following is an image:</h2>
-    <img src="{{url_for('static',filename='img/ud.png')}}" alt="">
+  <h2>The following is an image:</h2>
+  <img src="{{url_for('static',filename='img/ud.png')}}" alt="">
 
 {% endblock %}
